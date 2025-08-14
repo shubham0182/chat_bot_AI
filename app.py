@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize OpenAI client
-client = OpenAI(api_key="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")  # 🔹 Replace with your actual API key
+client = OpenAI(api_key="YOUR_OPENAI_API")  # 🔹 Replace with your actual API key
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -30,3 +30,4 @@ def chat():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
