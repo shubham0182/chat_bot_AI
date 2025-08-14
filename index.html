@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="theme-selector">
+            <button onclick="changeTheme('ios-light')" class="theme-btn active">Light</button>
+            <button onclick="changeTheme('ios-dark')" class="theme-btn">Dark</button>
+            <button onclick="changeTheme('ios-black-white')" class="theme-btn">B&W</button>
+        </div>
+        
+        <div class="chatbox" id="chatbox">
+            <div class="message bot">Welcome! In Shubham Chat Bot..... </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="iMessage..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
